@@ -23,10 +23,10 @@ const PlayersContainer = () => {
             console.error('There was an error fetching the players', error);
         });
 
-    }, [refresh]); // Update dependency to [refresh]
+    }, [refresh]); // update on refresh change
 
     const handlePlayerDeleted = () => {
-        setRefresh(prev => !prev); // Toggle refresh state to trigger re-fetching
+        setRefresh(prev => !prev); // for togglin the refrehs state
     };
 
     const filteredPlayers = players.filter(player =>

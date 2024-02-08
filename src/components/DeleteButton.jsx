@@ -9,17 +9,14 @@ const DeleteButton = ({ playerId, onPlayerDeleted }) => {
             if (!response.ok) {
                 throw new Error('Network response was not okay');
             }
-            return response.json();
-        })
-        .then(() => {
-            console.log(`Deleted player with ID: ${playerId}`);
             onPlayerDeleted();
         })
+        
         .catch(error => {
             console.error('Error:',error);
         });
     };
-    
+
     return (
         <button onClick={handleDelete}>Delete Player</button>
     )

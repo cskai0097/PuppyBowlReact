@@ -2,7 +2,6 @@ import React from "react";
 import DetailsButton from "./DetailsButton";
 import DeleteButton from "./DeleteButton";
 
-// `Players` now only receives `players` as a prop, no internal state management
 export default function Players({ players, onPlayerDeleted }) {
     console.log('Players:', players);
     return (
