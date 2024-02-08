@@ -6,7 +6,7 @@ import PlayerSearch from "./PlayerSearch";
 const PlayersContainer = () => {
     const [players, setPlayers] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
-    const [refresh, setRefresh] = useState(false); // Add this line
+    const [refresh, setRefresh] = useState(false); 
 
     useEffect(() => {
         fetch('https://fsa-puppy-bowl.herokuapp.com/api/2308-acc-pt-web-pt-b/players')
